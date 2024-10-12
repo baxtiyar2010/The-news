@@ -1,0 +1,164 @@
+@import url(../style/fonts.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    background: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding-top: 20px;
+    margin-bottom: 42px;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+}
+
+.header__nav-link {
+    font-family: 'RR';
+    color: #3A3838;
+    font-size: 18px;
+    line-height: 21px;
+    transition: 300ms, color 300ms;
+}
+
+.header__nav-link:hover {
+    color: #EF4423;
+    background: white;
+}
+
+.header__img {}
+
+.header__img-foto {
+    width: 100%;
+}
+
+.header__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 36px;
+}
+
+.header__box-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.header__box-items {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.header__box-firth {
+    background: #B71C1C;
+    padding: 15px;
+    height: 100%;
+}
+
+.header__box-second {
+    background: #6A1B9A;
+    padding: 15px;
+    height: 100%;
+}
+
+
+
+.header__box-third {
+    background: #303F9F;
+    padding: 15px;
+    height: 100%;
+}
+
+
+.header__box-fourth {
+    background: #00695C;
+    padding: 15px;
+    height: 100%;
+}
+
+.header__box-title {
+    color: #FFF;
+    font-family: 'RB';
+    font-size: 19px;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+
+.header__box-text {
+    color: #EBEBEB;
+    font-family: "RR";
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+
+@media (max-width: 1400px) {
+    .header__box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .header__items-photo {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .header__nav {
+        column-gap: 50px;
+    }
+
+    .header__nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header__box {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .header__nav-logo {
+        display: none;
+    }
+
+}

@@ -1,0 +1,83 @@
+@import url(
+fonts.css
+);
+
+.main{
+    margin-top: 40px;
+}
+
+.main__title {
+    text-align: center;
+    color: #3A3838;
+    font-family: 'RB';
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 50px;
+}
+
+.main__content {
+    display: flex;
+    background: #EDEDED;
+}
+
+.main__content-courpus {
+    display: flex;
+    gap: 30px;
+
+}
+.main__left{
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main__left-img{
+    max-width: 100%;
+}
+
+
+
+.main__right {
+
+    max-width: 540px;
+    width: 100%;
+    padding-bottom: 30px;
+   
+}
+
+.main__right-title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #3A3838;
+    font-family: "RB";
+    font-size: 22px;
+    line-height: 26px;
+ 
+}
+
+.main__right-text {
+    color: #686868;
+    font-family: "RR";
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+
+@media (max-width:800px) {
+    .main__content-courpus{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }   
+   
+.main__right{
+    text-align: center;
+}
+
+.main__right-text{
+    text-align:justify;
+}
+}
